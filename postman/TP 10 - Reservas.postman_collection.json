@@ -1,0 +1,604 @@
+{
+  "info": {
+    "name": "TP 10 - Reservas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST carga Ana Ejemplo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estudiante\": \"Ana Ejemplo\",\n  \"email\": \"ana@example.com\",\n  \"sala\": \"Sala Norte\",\n  \"fecha\": \"2026-10-28\",\n  \"turno\": \"Mañana\",\n  \"personas\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 201 y Location"
+    },
+    {
+      "name": "POST carga Bruno Ejemplo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estudiante\": \"Bruno Ejemplo\",\n  \"email\": \"bruno@example.com\",\n  \"sala\": \"Sala Norte\",\n  \"fecha\": \"2026-10-28\",\n  \"turno\": \"Mañana\",\n  \"personas\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 201 y Location"
+    },
+    {
+      "name": "POST carga Carla Ejemplo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estudiante\": \"Carla Ejemplo\",\n  \"email\": \"carla@example.com\",\n  \"sala\": \"Sala Norte\",\n  \"fecha\": \"2026-10-28\",\n  \"turno\": \"Mañana\",\n  \"personas\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 201 y Location"
+    },
+    {
+      "name": "POST carga Diego Ejemplo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estudiante\": \"Diego Ejemplo\",\n  \"email\": \"diego@example.com\",\n  \"sala\": \"Sala Norte\",\n  \"fecha\": \"2026-10-28\",\n  \"turno\": \"Mañana\",\n  \"personas\": 3\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 201 y Location"
+    },
+    {
+      "name": "POST carga Elena Ejemplo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estudiante\": \"Elena Ejemplo\",\n  \"email\": \"elena@example.com\",\n  \"sala\": \"Sala Sur\",\n  \"fecha\": \"2026-10-28\",\n  \"turno\": \"Mañana\",\n  \"personas\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 201 y Location"
+    },
+    {
+      "name": "POST carga Fabian Ejemplo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estudiante\": \"Fabian Ejemplo\",\n  \"email\": \"fabian@example.com\",\n  \"sala\": \"Sala Multimedia\",\n  \"fecha\": \"2026-10-28\",\n  \"turno\": \"Mañana\",\n  \"personas\": 4\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 201 y Location"
+    },
+    {
+      "name": "GET Sala Norte personas-asc pagina 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?sala=Sala%20Norte&orden=personas-asc&pagina=1&limite=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "sala",
+              "value": "Sala Norte"
+            },
+            {
+              "key": "orden",
+              "value": "personas-asc"
+            },
+            {
+              "key": "pagina",
+              "value": "1"
+            },
+            {
+              "key": "limite",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 200, 2 reservas, total 4, paginas 2"
+    },
+    {
+      "name": "GET Sala Norte personas-asc pagina 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?sala=Sala%20Norte&orden=personas-asc&pagina=2&limite=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "sala",
+              "value": "Sala Norte"
+            },
+            {
+              "key": "orden",
+              "value": "personas-asc"
+            },
+            {
+              "key": "pagina",
+              "value": "2"
+            },
+            {
+              "key": "limite",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 200, otras 2 reservas, total 4, paginas 2"
+    },
+    {
+      "name": "GET sin params",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": []
+        }
+      },
+      "response": [],
+      "description": "Esperado: 200, 2 reservas, pagina 1, limite 2, total 6, paginas 3"
+    },
+    {
+      "name": "GET Sala Norte pagina 3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?sala=Sala%20Norte&pagina=3&limite=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "sala",
+              "value": "Sala Norte"
+            },
+            {
+              "key": "pagina",
+              "value": "3"
+            },
+            {
+              "key": "limite",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 200, datos vacio, total 4, paginas 2"
+    },
+    {
+      "name": "GET sala inexistente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?sala=Sala%20inexistente",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "sala",
+              "value": "Sala inexistente"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 200, datos vacio, total 0, paginas 0"
+    },
+    {
+      "name": "GET pagina=0",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?pagina=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "pagina",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET pagina=1.5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?pagina=1.5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "pagina",
+              "value": "1.5"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET limite=21",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?limite=21",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "limite",
+              "value": "21"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET pagina repetida",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?pagina=1&pagina=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "pagina",
+              "value": "1"
+            },
+            {
+              "key": "pagina",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET sala vacia",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?sala=",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "sala",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET sala repetida",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?sala=Sala%20Norte&sala=Sala%20Sur",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "sala",
+              "value": "Sala Norte"
+            },
+            {
+              "key": "sala",
+              "value": "Sala Sur"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET orden=otro",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?orden=otro",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "orden",
+              "value": "otro"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    },
+    {
+      "name": "GET select=email",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/reservas?select=email",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "reservas"
+          ],
+          "query": [
+            {
+              "key": "select",
+              "value": "email"
+            }
+          ]
+        }
+      },
+      "response": [],
+      "description": "Esperado: 400"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Resultados de las pruebas del Trabajo Práctico 10 - Consultas MongoDB
+
+Se realizaron las comprobaciones de los endpoints de la API utilizando Postman y PowerShell, conectando la aplicación de forma exitosa a nuestro clúster en MongoDB Atlas.
+
+Resumen de los casos probados:
+
+1. Verificación del Estado Global (/estado):
+- Resultado: Exitoso. El servidor responde correctamente con un conteo total de 6 reservas activas en la base de datos "reservas_salas_u10.
+
+2. Listar Reservas sin Parámetros (/api/reservas):
+- Resultado: Exitoso. Devuelve el listado inicial de reservas aplicando la paginación por defecto del sistema de forma correcta.
+
+3. Caso 3: Sala Norte - Página 1 (Límite 2):
+- URL: http://localhost:3000/api/reservas?sala=Sala Norte&orden=personas-asc&pagina=1&limite=2
+- Resultado: Exitoso. Filtra las reservas pertenecientes a la "Sala Norte" y las ordena de menor a mayor según la cantidad de personas. Muestra los registros correspondientes a Bruno Ejemplo (1 persona) y Ana Ejemplo (2 personas). El total de coincidencias es de 4 documentos estructurados en 2 páginas.
+
+4. Caso 4: Sala Norte - Página 2 (Límite 2):
+- URL: http://localhost:3000/api/reservas?sala=Sala Norte&orden=personas-asc&pagina=2&limite=2
+- Resultado: Exitoso. Realiza el salto de registros (offset) de manera correcta. Muestra los dos registros restantes de la "Sala Norte": Carla Ejemplo (2 personas) y Diego Ejemplo (3 personas), cambiando el indicador de página a 2.
+
+5. Control de Errores de Validación (Parámetros Incorrectos):
+- Resultado: Exitoso. Al intentar forzar búsquedas con páginas en 0, límites mayores a 20 o criterios de ordenamiento inválidos, el backend intercepta la solicitud y responde con el código de error esperado 400 (Bad Request), garantizando la integridad de las consultas.
+
+
+
+las capturas tienen el nombre del problema y el -1 o -2 esto lo hice para representar ya que no me cabia el codigo completo en una sola captura subi varias capturas mostrando todo el codigo
